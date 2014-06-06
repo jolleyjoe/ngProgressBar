@@ -28,7 +28,7 @@ $scope.timer_running = false;
 $scope.max_count = 11;
 ```
 - 'on-stop' is a callback function which will fire when the timer reaches the max.
--  To stop the timer on a button press, the 'start' attribute is being observed, so in your controller, just set the relevant scope variable to false. Your callback function might look like this : 
+-  To stop the timer on a button press :  The 'start' attribute is being observed, so in your controller, just set the relevant scope variable to false. Your callback function might look like this : 
 
 ```sh
 
@@ -37,7 +37,7 @@ $scope.stopProgress = function() {
 }
 ```
 
-- To start the timer, the 'start' value should be set to true, e.g. : 
+- To start the timer :  The 'start' attribute is being observed, so in your controller, just set the relevant scope variable to true. e.g. :
 
 ```sh
 $scope.startProgress = function() {
