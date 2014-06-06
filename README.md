@@ -21,7 +21,7 @@ var app = angular.module('progressdemo', ['progress.bar']);
 ```
 - 'type' is the bootstrap alert class (info, warning, success, danger)
 - 'max' is the maximum value that the timer will reach in seconds
-- 'start' is a variable (either set from controller scope or directly) which must be either true or false : e.g. : 
+- 'start' is a boolean attribute which must be set from the controller scope : e.g. : 
 
 ```sh
 $scope.timer_running = false;
