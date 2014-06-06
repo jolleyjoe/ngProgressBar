@@ -7,6 +7,8 @@ The timer will count in seconds from 0 to to the maximum number of seconds given
 ###Progress Bar Demo Screenshot###
 ![Progress Bar Demo Screenshot](https://github.com/jolleyjoe/ngProgressBar/blob/master/progressbar.jpg?raw=true "Progress Bar Demo Chooser Screenshot")
 
+Plunkr : http://plnkr.co/HG2Ye9
+
 Usage
 --------------
 
