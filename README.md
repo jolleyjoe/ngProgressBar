@@ -2,7 +2,7 @@ ng-progressbar
 =========
 
 A simple bootstrap-progressbar directive. Requires Bootstrap 3.
-The timer will increment from 0 to to a maximum value, and the progress bar will increase based on percentage progress of the timer towards that maximum value.
+The timer will count in seconds from 0 to to the maximum number of seconds given, and the progress bar will increase based on percentage progress of the timer towards that maximum value. 
 
 
 Usage
@@ -27,7 +27,8 @@ var app = angular.module('progressdemo', ['progress.bar']);
 $scope.timer_running = false;
 $scope.max_count = 11;
 ```
-- 'on-stop' is a callback function , e.g. for the example above : 
+- 'on-stop' is a callback function which will fire when the timer reaches the max.
+- - To stop the timer on a button press, the 'start' attribute is being observed, so in your controller, just set the relevant scope variable to false. Your callback function might look like this : 
 
 ```sh
 
@@ -43,3 +44,6 @@ $scope.startProgress = function() {
     $scope.timer_running = true;
 }
 ```
+
+
+
