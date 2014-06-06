@@ -1,7 +1,7 @@
 ng-progressbar
 =========
 
-A simple bootstrap-progressbar directive which takes in a maximum value, a true/false value for starting/stopping and a callback function which fires when the timer reaches the end. Requires Bootstrap 3.
+A simple bootstrap-progressbar directive. Requires Bootstrap 3.
 The timer will increment from 0 to to a maximum value, and the progress bar will increase based on percentage progress of the timer towards that maximum value.
 
 
