@@ -5,13 +5,14 @@ angular.module('progress.bar', [])
 		return {
 
 			restrict : 'E',
-			template : "<div class='progress'><div class='progress-bar progress-bar-{{type}}' role='progressbar' style='width:{{percent_complete}}%;'>{{current}} / {{max}} seconds</div></div>",
+			template : "<div class='progress'><pan ng-if='current <= 0'>Starting Timer in {{(0 - current + 1)}} seconds</span>>{{current}} / {{max}} seconds</div></div>",
 			replace : true,
 			scope: {
             	max: '@',
             	start: '@',
             	type: '@',
-            	onStop: '&'
+            	onStop: '&',
+							delay : '@'
         	},
 
         	controller : ['$scope', '$timeout', function($scope, $timeout) {
@@ -36,7 +37,7 @@ angular.module('progress.bar', [])
 				attrs.$observe('start', function(value) {
 					console.log('observe start change');
 					if(value === 'true') {
-						scope.startAt = 0;
+						scope.startAt = -scope.delay;
 						scope.mytimeout = $timeout(scope.onTimeout,1000);
 					}else if(value ==='false') {
 						scope.stop();
