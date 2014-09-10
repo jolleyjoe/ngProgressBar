@@ -5,7 +5,7 @@ angular.module('progress.bar', [])
 		return {
 
 			restrict : 'E',
-			template : "<div class='progress'><pan ng-if='current <= 0'>Starting Timer in {{(0 - current + 1)}} seconds</span>>{{current}} / {{max}} seconds</div></div>",
+			template : "<div class='progress'><span ng-if='current <= 0'>Starting Timer in {{(0 - current + 1)}} seconds</span><div class='progress-bar progress-bar-{{type}}' role='progressbar' style='width:{{percent_complete}}%;'>{{current}} / {{max}} seconds</div></div>",
 			replace : true,
 			scope: {
             	max: '@',
