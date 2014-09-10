@@ -2,8 +2,12 @@ ng-progressbar
 =========
 
 A simple bootstrap-progressbar directive for angularJS. Requires Bootstrap 3.
-The timer will count in seconds from 0 to to the maximum number of seconds given, and the progress bar will increase based on percentage progress of the timer towards that maximum value. 
+The timer will count in seconds from 0 to to the maximum number of seconds given, and the progress bar will increase based on percentage progress of the timer towards that maximum value with a text inlay. 
 
+###Progress Bar Demo Screenshot###
+![Progress Bar Demo Screenshot](https://github.com/jolleyjoe/ngProgressBar/blob/master/progressbar.jpg?raw=true "Progress Bar Demo Chooser Screenshot")
+
+Play around with the plunker : http://plnkr.co/HG2Ye9
 
 Usage
 --------------
